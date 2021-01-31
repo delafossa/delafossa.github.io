@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Backgammon score sheet</title>
+      <meta name="description" content="Backgammon score sheet" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+
+   <body class="light">
+      <header class="header">
+         <div class="container">
+            <div class="header-inner">
+               <div class="logo">
+                  <a href="/">
+                     <i class="fas fa-dice"></i>
+                  </a>
+               </div>
+               <nav class="main-menu">
+                  <ul>
+                     <li class="green">
+                        <a href="#">Start new</a>
+                     </li>
+                     <li class="blue">
+                        <a href="#">Continue</a>
+                     </li>
+                     <li class="yellow">
+                        <a href="#">Undo last</a>
+                     </li>
+                     <li class="red">
+                        <a href="#">Reset all</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="hamburger">
+                  <a href="#">
+                     <i class="fas fa-bars"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <div class="section">
+         <div class="container">
+            <div class="section-inner">
+               <div class="heading">
+                  <div class="first-move">
+                     <div class="first-move-text">First to act</div>
+                     <div class="first-move-name">Player Black</div>
+                  </div>
+                  <span>Good luck</span>
+               </div>
+               <div class="cards">
+                  <div class="card card-black ">
+                     <div class="card-header">
+                        Player <span>Black</span><i class="fas fa-crown"></i>
+                     </div>
+                     <div class="card-body">
+                        <div class="card-inner">
+                           <div class="card-item">
+                              <div class="card-item-number">14</div>
+                              <div class="card-item-text">Hands won</div>
+                              <div class="card-item-icon">
+                                 <i class="fas fa-trophy"></i>
+                              </div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-number">11</div>
+                              <div class="card-item-text">Single point</div>
+                              <div class="card-item-icon">
+                                 <i class="fas fa-check"></i>
+                              </div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-number">3</div>
+                              <div class="card-item-text">Double point</div>
+                              <div class="card-item-icon">
+                                 <i class="fas fa-check-double"></i>
+                              </div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-number">42%</div>
+                              <div class="card-item-text">Win percentage</div>
+                              <div class="card-item-icon">
+                                 <i class="fas fa-percent"></i>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-inner">
+                           <div class="card-score">17</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card card-white active">
+                     <div class="card-header">
+                        Player <span>White</span><i class="fas fa-crown"></i>
+                     </div>
+                     <div class="card-body">
+                        <div class="card-inner">
+                           <div class="card-score">23</div>
+                        </div>
+                        <div class="card-inner">
+                           <div class="card-item">
+                              <div class="card-item-icon">
+                                 <i class="fas fa-trophy"></i>
+                              </div>
+                              <div class="card-item-text">Hands won</div>
+                              <div class="card-item-number">19</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-icon">
+                                 <i class="fas fa-check"></i>
+                              </div>
+                              <div class="card-item-text">Single point</div>
+                              <div class="card-item-number">15</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-icon">
+                                 <i class="fas fa-check-double"></i>
+                              </div>
+                              <div class="card-item-text">Double point</div>
+                              <div class="card-item-number">4</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-icon">
+                                 <i class="fas fa-percent"></i>
+                              </div>
+                              <div class="card-item-text">Win percentage</div>
+                              <div class="card-item-number">58%</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <form action="#" name="main-form" method="post">
+                  <div class="buttons">
+                     <div class="button button-single-black">
+                        <input type="radio" id="single-black" name="form" />
+                        <label for="single-black">Single</label>
+                     </div>
+                     <div class="button button-double-black">
+                        <input type="radio" id="double-black" name="form" />
+                        <label for="single-black">Double</label>
+                     </div>
+                     <div class="button button-submit">
+                        <input class="submit" type="submit" />
+                     </div>
+                     <div class="button button-single-white">
+                        <input type="radio" id="single-white" name="form" />
+                        <label for="single-white">Single</label>
+                     </div>
+                     <div class="button button-double-white">
+                        <input type="radio" id="double-white" name="form" />
+                        <label for="single-white">Double</label>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <footer class="footer">
+         <div class="copyright">
+            <p>Made with love and passion</p>
+            <p>Copyright © 2021 | All rights reserved</p>
+         </div>
+      </footer>
+
+      <script src="js/main.js"></script>
+   </body>
+</html>
