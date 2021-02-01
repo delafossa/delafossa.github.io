@@ -26,7 +26,7 @@
    }
    
    .main-menu a {
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: var(--white-shade);
       text-transform: uppercase;
       font-weight: 700;
