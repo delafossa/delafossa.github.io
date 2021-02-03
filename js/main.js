@@ -22,9 +22,24 @@ function enableSubmitWhite() {
   document.getElementById("submit-white").disabled = false;
   }
 
+// === THE LEADER ON TOP ===
 
+// --- Add/Remove class "leader" ---
 
-
+function leaderClass(){
+  var cardBlackScore = parseInt($('#card-score-black').val(), 10);
+  var cardWhiteScore = parseInt($('#card-score-white').val(), 10);
+  if(cardBlackScore > cardWhiteScore){
+    $('.card-black').addClass("leader");
+  }else{
+    $('.card-black').removeClass("leader");
+  }
+  if(cardWhiteScore > cardBlackScore){
+    $('.card-white').addClass("leader");
+  }else{
+    $('.card-white').removeClass("leader");
+  }
+} 
 
 
 

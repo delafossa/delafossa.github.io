@@ -263,8 +263,10 @@
    }
 
    .menu-item a {
-      font-size: 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
       padding: 0.5rem 1rem;
+      font-family: 'Open Sans', sans-serif;
    }
 
    .main-menu.open {

@@ -4,6 +4,7 @@
 * ==========================================
 *     font-family: 'Anton', sans-serif;
 *     font-family: 'Open Sans', sans-serif;
+*     font-family: 'Bebas Neue', cursive;
 *
 *
 * <<< FONT AWESOME ICONS >>> 
@@ -43,7 +44,12 @@ html {
 
 body {
    width: 100%;
-   background: url(/img/background.jpg) center/cover no-repeat;
+   background: linear-gradient(
+         180deg,
+         rgba(0, 0, 0, 0.7) 0%,
+         rgba(0, 0, 0, 0.9) 100%
+      ),
+      url(/img/background.jpg) center/cover no-repeat;
    font-family: "Open Sans", sans-serif;
    font-size: 0.9rem;
 }
@@ -89,6 +95,16 @@ a {
 
 .logo {
    font-size: 2rem;
+
+   /* font-family: 'Anton', sans-serif; */
+   /* font-family: 'Bebas Neue', cursive; */
+   font-weight: 600;
+   text-transform: uppercase;
+   z-index: 3;
+}
+
+.logo a {
+   color: var(--white);
 }
 
 /* --- Main navigation --- */
