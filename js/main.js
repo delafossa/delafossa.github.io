@@ -1,9 +1,9 @@
-// === menuItem ===
+// === MAIN MENU / HAMBURGER ===
 
 const menuBtn = document.querySelector('.menu-btn');
 const mainMenu = document.querySelector('.main-menu');
 
-// --- menuItem toggle ---
+// --- Add/Remove class "open" ---
 
 menuBtn.addEventListener('click', () => {
   
@@ -12,15 +12,15 @@ menuBtn.addEventListener('click', () => {
 
 })
 
-
+// === SUBMIT BUTTONS ACTIVATION ===
 
 function enableSubmitBlack() {
   document.getElementById("submit-black").disabled = false;
   }
 
-  function enableSubmitWhite() {
-    document.getElementById("submit-white").disabled = false;
-    }
+function enableSubmitWhite() {
+  document.getElementById("submit-white").disabled = false;
+  }
 
 
 

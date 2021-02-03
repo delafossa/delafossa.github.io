@@ -1,8 +1,6 @@
-/*
-BASE (MOBILE) SIZE
-These are the mobile styles. It's what people see on their phones.
-Remember, keep it light: Speed is Important.
-*/
+/* === BASE (MOBILE) SIZE === */
+
+/* --- Devices with viewport minimum width 360px --- */
 
 @media only screen and (min-width: 360px) {
    .heading {
@@ -22,6 +20,8 @@ Remember, keep it light: Speed is Important.
    }
 }
 
+/* --- Devices with viewport minimum width 375px --- */
+
 @media only screen and (min-width: 375px) {
    .heading {
       padding: 3rem 0 2rem 0;
@@ -40,6 +40,8 @@ Remember, keep it light: Speed is Important.
    }
 }
 
+/* --- Devices with viewport minimum width 411px --- */
+
 @media only screen and (min-width: 411px) {
    .card-buttons label {
       padding: 0.4rem 1.8rem;
@@ -54,10 +56,10 @@ Remember, keep it light: Speed is Important.
    }
 }
 
-/*
-LARGER MOBILE DEVICES
-This is for mobile devices with a bit larger screens.
-*/
+/* === LARGER MOBILE DEVICES === */
+
+/* --- Devices with viewport minimum width 481px --- */
+
 @media only screen and (min-width: 481px) {
    .heading {
       padding: 4rem 0 3rem 0;
@@ -75,6 +77,8 @@ This is for mobile devices with a bit larger screens.
       padding-left: 3rem;
    }
 }
+
+/* --- Devices with viewport minimum width 540px --- */
 
 @media only screen and (min-width: 540px) {
    .heading {
@@ -136,6 +140,8 @@ This is for mobile devices with a bit larger screens.
    }
 }
 
+/* --- Devices with viewport minimum width 600px --- */
+
 @media only screen and (min-width: 600px) {
    .heading {
       padding: 5rem 0 4rem 0;
@@ -183,9 +189,10 @@ This is for mobile devices with a bit larger screens.
    }
 
    .card-inner-heading {
-      font-size: 1.6rem;
-      letter-spacing: 0.7rem;
-      font-weight: 600;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.8rem;
+      margin-bottom: 1.5rem;
    }
 
    .card-inner-heading i {
@@ -220,9 +227,18 @@ This is for mobile devices with a bit larger screens.
    }
 }
 
+/* --- Devices with viewport minimum width 768px --- */
+
 @media only screen and (min-width: 768px) {
+   .container {
+      width: 100%;
+      max-width: 76.8rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+   }
+
    .header-inner {
-      padding: 1.2rem 1.5rem;
+      padding: 1.2rem 0;
    }
 
    .logo {
@@ -247,8 +263,7 @@ This is for mobile devices with a bit larger screens.
    }
 
    .menu-item a {
-      text-transform: uppercase;
-      font-size: 1.6rem;
+      font-size: 2rem;
       padding: 0.5rem 1rem;
    }
 
@@ -262,7 +277,7 @@ This is for mobile devices with a bit larger screens.
    }
 
    .heading {
-      padding: 5rem 0 4rem 0;
+      padding: 6rem 0 4rem 0;
    }
 
    .first-move-text {
@@ -272,7 +287,7 @@ This is for mobile devices with a bit larger screens.
    }
 
    .first-move-name {
-      font-size: 4rem;
+      font-size: 4.6rem;
       margin-bottom: 1rem;
    }
 
@@ -285,32 +300,46 @@ This is for mobile devices with a bit larger screens.
       height: 30rem;
    }
 
+   .card-header {
+      top: 13.4rem;
+      left: -11rem;
+      font-size: 2rem;
+      letter-spacing: 1.1rem;
+      font-weight: 600;
+   }
+
    .card-score {
       padding-left: 0;
       text-align: center;
+      font-size: 20rem;
    }
 
    .card-inner-heading {
-      font-size: 1.6rem;
-      letter-spacing: 0.7rem;
-      font-weight: 600;
+      font-size: 2.2em;
+      text-transform: uppercase;
+      letter-spacing: 0.8rem;
+      margin-bottom: 1.8rem;
    }
 
    .card-inner-heading i {
-      font-size: 2.6rem;
-      top: 2.4rem;
+      font-size: 3.2rem;
+      top: 2.2rem;
       right: 1.8rem;
    }
 
+   .card-item {
+      padding: 0.4rem 0;
+   }
+
    .card-item-text {
-      font-size: 1.4rem;
-      font-weight: 300;
+      font-size: 1.6rem;
+      font-weight: 400;
    }
 
    .card-item-number {
-      font-size: 1.6rem;
+      font-size: 2.2rem;
       font-weight: 600;
-      padding-top: 0.4rem;
+      padding-top: 0.3rem;
    }
 
    .card-buttons {
@@ -318,79 +347,21 @@ This is for mobile devices with a bit larger screens.
    }
 
    .card-buttons label {
-      padding: 0.4rem 3.4rem;
-      font-size: 1.8rem;
+      padding: 0.6rem 4.5rem;
+      font-size: 2.2rem;
    }
 
    .card-buttons input[type="submit"] {
-      padding: 0.4rem 7.5rem;
-      font-size: 1.8rem;
+      padding: 0.6rem 11rem;
+      font-size: 2.2rem;
    }
 
    .copyright {
-      padding: 1.4rem 0;
+      padding: 0.8rem 0;
    }
 
    .footer p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.6;
    }
-}
-
-/*
-TABLET & SMALLER LAPTOPS
-The average viewing window and preferred media query for those is 768px.
-But I think that some more breathing space is good:)
-*/
-@media only screen and (min-width: 920px) {
-}
-
-/*
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*/
-@media only screen and (min-width: 1030px) {
-   .main-menu {
-      /* display: flex; */
-   }
-}
-
-/*
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*/
-@media only screen and (min-width: 1240px) {
-   .container {
-      width: 100%;
-      max-width: 117rem;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-   }
-
-   
-}
-
-/*
-RETINA (2x RESOLUTION DEVICES)
-This applies to the retina iPhone (4s) and iPad (2,3) along with
-other displays with a 2x resolution.
-*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-   only screen and (min--moz-device-pixel-ratio: 1.5),
-   only screen and (min-device-pixel-ratio: 1.5) {
-}
-
-/*
-iPHONE 5 MEDIA QUERY
-iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
-*/
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/*
-PRINT STYLESHEET
-*/
-@media print {
 }
