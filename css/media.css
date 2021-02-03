@@ -1,104 +1,396 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/*
+BASE (MOBILE) SIZE
+These are the mobile styles. It's what people see on their phones.
+Remember, keep it light: Speed is Important.
+*/
 
-   .container {
-      padding: 0 2rem;
-   }
-
-   .header-inner {
-      height: 100%;
-      padding: 0.6rem 0;
-   }
-
-   .logo {
-      display: none;
-   }
-
-   .main-menu li {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      margin-right: 0.5rem;
-   }
-
-   .main-menu li:last-child {
-      margin-right: 0;
-   }
-   
-   .main-menu a {
-      font-size: 1rem;
-      color: var(--white-shade);
-      text-transform: uppercase;
-      font-weight: 700;
-      padding: 0.5rem 0.5rem;
-   }
-
-   .hamburger a {
-      font-size: 2.6rem;
-   }
-
+@media only screen and (min-width: 360px) {
    .heading {
-      margin: 2rem 0 4rem 0;
+      padding: 2rem 0 1rem 0;
+   }
+
+   .card-buttons label {
+      padding: 0.4rem 1.3rem;
+   }
+
+   .card-buttons input[type="submit"] {
+      padding: 0.4rem 3rem;
+   }
+
+   .card-score {
+      padding-left: 1rem;
+   }
+}
+
+@media only screen and (min-width: 375px) {
+   .heading {
+      padding: 3rem 0 2rem 0;
+   }
+
+   .card-buttons label {
+      padding: 0.4rem 1.3rem;
+   }
+
+   .card-buttons input[type="submit"] {
+      padding: 0.4rem 3.6rem;
+   }
+
+   .card-score {
+      padding-left: 1rem;
+   }
+}
+
+@media only screen and (min-width: 411px) {
+   .card-buttons label {
+      padding: 0.4rem 1.8rem;
+   }
+
+   .card-buttons input[type="submit"] {
+      padding: 0.4rem 4.4rem;
+   }
+
+   .card-score {
+      padding-left: 2rem;
+   }
+}
+
+/*
+LARGER MOBILE DEVICES
+This is for mobile devices with a bit larger screens.
+*/
+@media only screen and (min-width: 481px) {
+   .heading {
+      padding: 4rem 0 3rem 0;
+   }
+
+   .card-buttons label {
+      padding: 0.4rem 2.6rem;
+   }
+
+   .card-buttons input[type="submit"] {
+      padding: 0.4rem 6rem;
+   }
+
+   .card-score {
+      padding-left: 3rem;
+   }
+}
+
+@media only screen and (min-width: 540px) {
+   .heading {
+      padding: 5rem 0 4rem 0;
    }
 
    .first-move-text {
-      font-size: 0.8rem;
-      font-weight: 100;
-      text-transform: uppercase;
-      letter-spacing: 0.3rem;
+      font-size: 1.4rem;
+      letter-spacing: 0.4rem;
+      margin-bottom: 0.6rem;
    }
-   
+
    .first-move-name {
-      font-size: 2.2rem;
-      font-family: "Anton", sans-serif;
-      margin: 0.6rem 0 0.3rem 0;
+      font-size: 3rem;
+      margin-bottom: 0.6rem;
    }
 
    .heading span {
-      font-size: 0.6rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.4rem;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+   }
+
+   .card-buttons label {
+      padding: 0.4rem 3.4rem;
+   }
+
+   .card-buttons input[type="submit"] {
+      padding: 0.4rem 7.5rem;
+   }
+
+   .card-score {
+      font-size: 12rem;
+      padding-left: 4rem;
+   }
+
+   .card-inner-heading {
+      font-size: 1.4em;
+      letter-spacing: 0.5rem;
+   }
+
+   .card-inner-heading i {
+      font-size: 1.8rem;
+      top: 1.7rem;
+      right: 1.2rem;
+   }
+
+   .card-item-text {
+      font-size: 1.2rem;
+   }
+
+   .card-item-number {
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding-top: 0.2rem;
+   }
+
+   .card-buttons {
+      padding-top: 0.4rem;
    }
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-   /* Styles */
+@media only screen and (min-width: 600px) {
+   .heading {
+      padding: 5rem 0 4rem 0;
+   }
+
+   .first-move-text {
+      font-size: 1.8rem;
+      letter-spacing: 0.6rem;
+      margin-bottom: 0.8rem;
+   }
+
+   .first-move-name {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+   }
+
+   .heading span {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+   }
+
+   .card {
+      height: 25rem;
+   }
+
+   .card-item {
+      padding: 0.2rem;
+   }
+
+   .card-content {
+      padding: 2rem 2rem 2rem 4.5rem;
+   }
+
+   .card-header {
+      top: 11.4rem;
+      left: -9.2rem;
+      font-size: 1.6rem;
+      letter-spacing: 1rem;
+      font-weight: 600;
+   }
+
+   .card-score {
+      font-size: 16rem;
+      padding-left: 4rem;
+   }
+
+   .card-inner-heading {
+      font-size: 1.6rem;
+      letter-spacing: 0.7rem;
+      font-weight: 600;
+   }
+
+   .card-inner-heading i {
+      font-size: 2.6rem;
+      top: 2.4rem;
+      right: 1.8rem;
+   }
+
+   .card-item-text {
+      font-size: 1.4rem;
+      font-weight: 300;
+   }
+
+   .card-item-number {
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding-top: 0.4rem;
+   }
+
+   .card-buttons {
+      padding-top: 0;
+   }
+
+   .card-buttons label {
+      padding: 0.4rem 3.4rem;
+      font-size: 1.8rem;
+   }
+
+   .card-buttons input[type="submit"] {
+      padding: 0.4rem 7.5rem;
+      font-size: 1.8rem;
+   }
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-   /* Styles */
+@media only screen and (min-width: 768px) {
+   .header-inner {
+      padding: 1.2rem 1.5rem;
+   }
+
+   .logo {
+      font-size: 3rem;
+   }
+
+   .main-menu {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      height: auto;
+      transform: translateX(0);
+   }
+
+   .menu-item {
+      padding: 0;
+   }
+
+   .menu-item a {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      padding: 0.5rem 1rem;
+   }
+
+   .main-menu.open {
+      display: none;
+      transform: translateX(-100vw);
+   }
+
+   .menu-btn {
+      display: none;
+   }
+
+   .heading {
+      padding: 5rem 0 4rem 0;
+   }
+
+   .first-move-text {
+      font-size: 1.8rem;
+      letter-spacing: 0.6rem;
+      margin-bottom: 0.8rem;
+   }
+
+   .first-move-name {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+   }
+
+   .heading span {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+   }
+
+   .card {
+      height: 30rem;
+   }
+
+   .card-score {
+      padding-left: 0;
+      text-align: center;
+   }
+
+   .card-inner-heading {
+      font-size: 1.6rem;
+      letter-spacing: 0.7rem;
+      font-weight: 600;
+   }
+
+   .card-inner-heading i {
+      font-size: 2.6rem;
+      top: 2.4rem;
+      right: 1.8rem;
+   }
+
+   .card-item-text {
+      font-size: 1.4rem;
+      font-weight: 300;
+   }
+
+   .card-item-number {
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding-top: 0.4rem;
+   }
+
+   .card-buttons {
+      padding-top: 0;
+   }
+
+   .card-buttons label {
+      padding: 0.4rem 3.4rem;
+      font-size: 1.8rem;
+   }
+
+   .card-buttons input[type="submit"] {
+      padding: 0.4rem 7.5rem;
+      font-size: 1.8rem;
+   }
+
+   .copyright {
+      padding: 1.4rem 0;
+   }
+
+   .footer p {
+      font-size: 1rem;
+      line-height: 1.6;
+   }
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-   /* Styles */
+/*
+TABLET & SMALLER LAPTOPS
+The average viewing window and preferred media query for those is 768px.
+But I think that some more breathing space is good:)
+*/
+@media only screen and (min-width: 920px) {
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-   /* Styles */
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+   .main-menu {
+      /* display: flex; */
+   }
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-   /* Styles */
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+   .container {
+      width: 100%;
+      max-width: 117rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+   }
+
+   
 }
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-   /* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-   /* Styles */
-}
-
-/* iPhone 4 ----------- */
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution.
+*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+   only screen and (min--moz-device-pixel-ratio: 1.5),
    only screen and (min-device-pixel-ratio: 1.5) {
-   /* Styles */
+}
+
+/*
+iPHONE 5 MEDIA QUERY
+iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/*
+PRINT STYLESHEET
+*/
+@media print {
 }
