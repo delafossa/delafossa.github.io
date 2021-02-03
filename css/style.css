@@ -95,11 +95,9 @@ a {
 
 .logo {
    font-size: 2rem;
-
-   /* font-family: 'Anton', sans-serif; */
-   /* font-family: 'Bebas Neue', cursive; */
    font-weight: 600;
    text-transform: uppercase;
+   letter-spacing: 0.5rem;
    z-index: 3;
 }
 
@@ -428,3 +426,53 @@ a {
 }
 
 /* === FOOTER END === */
+
+/* === STATISTICS PAGE === */
+
+#stats .card-score {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 15rem;
+   opacity: 0.2;
+}
+
+
+#stats .card-inner-heading {
+   
+}
+
+#stats .card-inner {
+   width: 100%;
+
+}
+
+#stats {
+}
+
+#stats {
+}
+
+#stats {
+}
+
+#stats {
+}
+
+#stats {
+}
+
+#stats {
+}
+
+#stats {
+}
+
+#stats {
+}
+
+#stats {
+}
+
+/* === STATISTICS PAGE END === */

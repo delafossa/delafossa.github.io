@@ -21,7 +21,7 @@
       <link rel="stylesheet" href="css/media.css" />
    </head>
 
-   <body>
+   <body id="stats">
       <!-- === HEADER === -->
       <header class="header">
          <div class="container">
@@ -36,7 +36,9 @@
                   <li class="menu-item"><a href="/">Home</a></li>
                   <li class="menu-item"><a href="#">Start new</a></li>
                   <li class="menu-item"><a href="#">Continue</a></li>
-                  <li class="menu-item"><a href="/stats.html">Statistics</a></li>
+                  <li class="menu-item">
+                     <a href="/stats.html">Statistics</a>
+                  </li>
                   <li class="menu-item"><a href="#">Undo last</a></li>
                   <li class="menu-item"><a href="#">Reset all</a></li>
                </ul>
@@ -63,13 +65,27 @@
                   <div class="card-content">
                      <div class="card-body">
                         <!-- --- Card Black / Card Black score --- -->
-                        <div class="card-inner">
-                           <div class="card-score" id="card-score-black">31</div>
+                        <div class="card-score" id="card-score-black">
+                           31
                         </div>
                         <!-- --- Card Black / Card Black statistics --- -->
                         <div class="card-inner">
-                           <div class="card-inner-heading">
-                              Statistics<i class="fas fa-crown"></i>
+                           
+                           <div class="card-item">
+                              <div class="card-item-text">Hands won</div>
+                              <div class="card-item-number">26</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-text">Single point</div>
+                              <div class="card-item-number">21</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-text">Double point</div>
+                              <div class="card-item-number">5</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-text">Win percentage</div>
+                              <div class="card-item-number">52%</div>
                            </div>
                            <div class="card-item">
                               <div class="card-item-text">Hands won</div>
@@ -89,31 +105,6 @@
                            </div>
                         </div>
                      </div>
-                     <!-- --- Card Black / Card Black buttons --- -->
-                     <div class="card-buttons">
-                        <form class="submit-form" action="submit.php">
-                           <input
-                              type="radio"
-                              name="black"
-                              id="single-black"
-                              onclick="enableSubmitBlack()"
-                           />
-                           <label for="single-black">Single</label>
-                           <input
-                              type="radio"
-                              name="black"
-                              id="double-black"
-                              onclick="enableSubmitBlack()"
-                           />
-                           <label for="double-black">Double</label>
-                           <input
-                              type="submit"
-                              id="submit-black"
-                              disabled
-                              value="Submit score"
-                           />
-                        </form>
-                     </div>
                   </div>
                </div>
                <!-- --- Card White --- -->
@@ -122,14 +113,11 @@
                   <div class="card-content">
                      <div class="card-body">
                         <!-- --- Card White / Card White score --- -->
-                        <div class="card-inner">
-                           <div class="card-score" id="card-score-white">27</div>
+                        <div class="card-score" id="card-score-white">
+                           27
                         </div>
                         <!-- --- Card White / Card White statistics --- -->
                         <div class="card-inner">
-                           <div class="card-inner-heading">
-                              Statistics<i class="fas fa-crown"></i>
-                           </div>
                            <div class="card-item">
                               <div class="card-item-text">Hands won</div>
                               <div class="card-item-number">23</div>
@@ -146,32 +134,23 @@
                               <div class="card-item-text">Win percentage</div>
                               <div class="card-item-number">47%</div>
                            </div>
+                           <div class="card-item">
+                              <div class="card-item-text">Hands won percentage</div>
+                              <div class="card-item-number">65%</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-text">Single point percentage</div>
+                              <div class="card-item-number">34%</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-text">Double point percentage</div>
+                              <div class="card-item-number">41%</div>
+                           </div>
+                           <div class="card-item">
+                              <div class="card-item-text">Win percentage</div>
+                              <div class="card-item-number">47%</div>
+                           </div>
                         </div>
-                     </div>
-                     <!-- --- Card White / Card White buttons --- -->
-                     <div class="card-buttons">
-                        <form action="submit.php">
-                           <input
-                              type="radio"
-                              name="white"
-                              id="single-white"
-                              onclick="enableSubmitWhite()"
-                           />
-                           <label for="single-white">Single</label>
-                           <input
-                              type="radio"
-                              name="white"
-                              id="double-white"
-                              onclick="enableSubmitWhite()"
-                           />
-                           <label for="double-white">Double</label>
-                           <input
-                              type="submit"
-                              id="submit-white"
-                              disabled
-                              value="Submit score"
-                           />
-                        </form>
                      </div>
                   </div>
                </div>
@@ -187,7 +166,11 @@
          </div>
       </footer>
       <!-- === FOOTER END === -->
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.min.js"
+         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+         crossorigin="anonymous"
+      ></script>
       <script src="js/main.js"></script>
    </body>
 </html>
