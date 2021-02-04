@@ -12,6 +12,8 @@ menuBtn.addEventListener('click', () => {
 
 })
 
+
+
 // === SUBMIT BUTTONS ACTIVATION ===
 
 function enableSubmitBlack() {
@@ -22,25 +24,39 @@ function enableSubmitWhite() {
   document.getElementById("submit-white").disabled = false;
   }
 
+
+
 // === THE LEADER ON TOP ===
 
 // --- Add/Remove class "leader" ---
 
-function leaderClass(){
-  var cardBlackScore = parseInt($('#card-score-black').val(), 10);
-  var cardWhiteScore = parseInt($('#card-score-white').val(), 10);
-  if(cardBlackScore > cardWhiteScore){
-    $('.card-black').addClass("leader");
-  }else{
-    $('.card-black').removeClass("leader");
-  }
-  if(cardWhiteScore > cardBlackScore){
-    $('.card-white').addClass("leader");
-  }else{
-    $('.card-white').removeClass("leader");
-  }
-} 
 
+const cardBlack = document.querySelector('.card-black');
+const cardWhite = document.querySelector('.card-white');
+
+let cardBlackScore = parseInt(document.getElementById('card-score-black').value);
+let cardWhiteScore = parseInt($('#card-score-white').val(), 10);
+
+if (isNaN(cardBlackScore)==true) cardBlackScore=0;
+if (isNaN(cardWhiteScore)==true) cardWhiteScore=0;
+
+
+if(cardBlackScore > cardWhiteScore) {
+  cardBlack.classList.add('leader');
+}
+else{
+  cardBlack.classList.remove('leader');
+}
+if(cardWhiteScore > cardBlackScore){
+  cardWhite.classList.add('leader');
+}
+else{
+  cardWhite.classList.remove('leader');
+}
+
+
+
+console.log(cardBlackScore)
 
 
 
