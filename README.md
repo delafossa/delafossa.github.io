@@ -1,4 +1,4 @@
-# Scorex
+# SCOREX
 
 Backgammon score keeper
 
