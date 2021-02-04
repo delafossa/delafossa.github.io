@@ -1,6 +1,6 @@
-# Project Title
+# Scorex
 
-One Paragraph of project description goes here
+Backgammon score keeper
 
 ## Getting Started
 
