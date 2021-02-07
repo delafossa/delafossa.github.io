@@ -135,8 +135,16 @@ $(document).ready(function() {
 // --- Add/Remove class "leader" ---
 
 
+enableAudio
 
 
+function enableAudioCheck() {
+  var sound = document.getElementById("audio_check");
+  sound.Play();
+}
 
-
+function enableAudioSubmit() {
+  var sound = document.getElementById("audio_submit");
+  sound.Play();
+}
 

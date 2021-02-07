@@ -114,19 +114,21 @@
                      </div>
                      <!-- --- Card Black / Card Black buttons --- -->
                      <div class="card-buttons">
+                        <audio id="audio_check" src="/audio/check.wav" autoplay="false" ></audio>
+                        <audio id="audio_submit" src="/audio/submit.wav" autoplay="false" ></audio>
                         <form class="submit-form" action="#">
                            <input
                               type="radio"
                               name="black"
                               id="single_black"
-                              onclick="enableSubmitBlack()"
+                              onclick="enableSubmitBlack(); enableAudioCheck();"
                            />
                            <label for="single_black">Single</label>
                            <input
                               type="radio"
                               name="black"
                               id="double_black"
-                              onclick="enableSubmitBlack()"
+                              onclick="enableSubmitBlack(); enableAudioCheck();"
                            />
                            <label for="double_black">Double</label>
                            <input
@@ -134,6 +136,7 @@
                               id="submit_black"
                               disabled
                               value="Submit score"
+                              onclick="enableAudioSubmit()"
                            />
                         </form>
                      </div>
