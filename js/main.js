@@ -17,11 +17,11 @@ menuBtn.addEventListener('click', () => {
 // === SUBMIT BUTTONS ACTIVATION ===
 
 function enableSubmitBlack() {
-  document.getElementById("submit-black").disabled = false;
+  document.getElementById("submit_black").disabled = false;
   }
 
 function enableSubmitWhite() {
-  document.getElementById("submit-white").disabled = false;
+  document.getElementById("submit_white").disabled = false;
   }
 
 

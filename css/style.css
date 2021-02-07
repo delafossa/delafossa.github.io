@@ -353,12 +353,12 @@ a {
    background-color: var(--green);
 }
 
-.card-buttons input[type="radio"]#single-black:checked + label {
+.card-buttons input[type="radio"]#single_black:checked + label {
    color: #fff;
    background-color: var(--yellow);
 }
 
-.card-buttons input[type="radio"]#single-white:checked + label {
+.card-buttons input[type="radio"]#single_white:checked + label {
    color: #fff;
    background-color: var(--yellow);
 }
@@ -439,40 +439,9 @@ a {
 }
 
 
-#stats .card-inner-heading {
-   
-}
 
 #stats .card-inner {
    width: 100%;
-
-}
-
-#stats {
-}
-
-#stats {
-}
-
-#stats {
-}
-
-#stats {
-}
-
-#stats {
-}
-
-#stats {
-}
-
-#stats {
-}
-
-#stats {
-}
-
-#stats {
 }
 
 /* === STATISTICS PAGE END === */
