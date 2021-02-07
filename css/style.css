@@ -279,7 +279,7 @@ a {
    width: 50%;
 }
 
-.card-score {
+.score {
    font-family: "Anton", sans-serif;
    font-size: 10rem;
 }
@@ -429,7 +429,7 @@ a {
 
 /* === STATISTICS PAGE === */
 
-#stats .card-score {
+#stats .score {
    position: absolute;
    top: 50%;
    left: 50%;

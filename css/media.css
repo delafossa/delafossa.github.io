@@ -15,7 +15,7 @@
       padding: 0.4rem 3rem;
    }
 
-   .card-score {
+   .score {
       padding-left: 1rem;
    }
 }
@@ -35,7 +35,7 @@
       padding: 0.4rem 3.6rem;
    }
 
-   .card-score {
+   .score {
       padding-left: 1rem;
    }
 }
@@ -51,7 +51,7 @@
       padding: 0.4rem 4.4rem;
    }
 
-   .card-score {
+   .score {
       padding-left: 2rem;
    }
 }
@@ -73,7 +73,7 @@
       padding: 0.4rem 6rem;
    }
 
-   .card-score {
+   .score {
       padding-left: 3rem;
    }
 }
@@ -109,7 +109,7 @@
       padding: 0.4rem 7.5rem;
    }
 
-   .card-score {
+   .score {
       font-size: 12rem;
       padding-left: 4rem;
    }
@@ -183,7 +183,7 @@
       font-weight: 600;
    }
 
-   .card-score {
+   .score {
       font-size: 16rem;
       padding-left: 4rem;
    }
@@ -310,7 +310,7 @@
       font-weight: 600;
    }
 
-   .card-score {
+   .score {
       padding-left: 0;
       text-align: center;
       font-size: 20rem;

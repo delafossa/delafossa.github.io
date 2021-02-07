@@ -10,19 +10,123 @@ menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('open');
   mainMenu.classList.toggle('open');
 
-})
+});
 
 
 
-// === SUBMIT BUTTONS ACTIVATION ===
+// === SUBMIT SCORE FORM ===
 
-function enableSubmitBlack() {
-  document.getElementById("submit_black").disabled = false;
-  }
+// --- Submit score buttons activation ---
 
-function enableSubmitWhite() {
-  document.getElementById("submit_white").disabled = false;
-  }
+$(document).ready(function() {
+ 
+
+  $("#single_black").on("change", function() {
+    $("#submit_black").prop("disabled", false);
+  });
+  
+  $("#double_black").on("change", function() {
+    $("#submit_black").prop("disabled", false);
+  });
+  
+  $("#single_white").on("change", function() {
+    $("#submit_white").prop("disabled", false);
+  });
+  
+  $("#double_white").on("change", function() {
+    $("#submit_white").prop("disabled", false);
+  });
+    
+  });
+
+// --- Calculate and append data (Player Black) ---
+
+$(document).ready(function() {
+  $('#submit_black').on("click", function() {
+    
+    if($('#single_black').is(':checked')) {
+
+      $("#score_black").text(function(i, text) {
+        return +text + 1 || 0
+      });
+    
+      $("#single_point_black").text(function(i, text) {
+        return +text + 1 || 0
+      });
+            
+    }
+
+    if($('#double_black').is(':checked')) { 
+            
+      $("#score_black").text(function(i, text) {
+        return +text + 2 || 0
+      });
+    
+      $("#double_point_black").text(function(i, text) {
+        return +text + 1 || 0
+      });
+            
+    }
+
+    $("#hands_won_black").text(function(i, text) {
+      return +text + 1 || 0
+    });
+
+    $("#single_black").prop("checked", false);
+    $("#double_black").prop("checked", false);
+    $("#submit_black").prop("disabled", true);
+
+      return false;
+  
+  });
+});
+
+// --- Calculate and append data (Player Black) ---
+
+$(document).ready(function() {
+  $('#submit_white').on("click", function() {
+
+    
+    if($('#single_white').is(':checked')) {
+
+      $("#score_white").text(function(i, text) {
+        return +text + 1 || 0
+      });
+    
+      $("#single_point_white").text(function(i, text) {
+        return +text + 1 || 0
+      });
+            
+    }
+
+    if($('#double_white').is(':checked')) { 
+            
+      $("#score_white").text(function(i, text) {
+        return +text + 2 || 0
+      });
+    
+      $("#double_point_white").text(function(i, text) {
+        return +text + 1 || 0
+      });
+            
+    }
+
+    $("#hands_won_white").text(function(i, text) {
+      return +text + 1 || 0
+    });
+
+    $("#single_white").prop("checked", false);
+    $("#double_white").prop("checked", false);
+    $("#submit_white").prop("disabled", true);
+
+      return false;
+  
+  });
+});
+
+
+
+
 
 
 
@@ -31,32 +135,7 @@ function enableSubmitWhite() {
 // --- Add/Remove class "leader" ---
 
 
-const cardBlack = document.querySelector('.card-black');
-const cardWhite = document.querySelector('.card-white');
 
-let cardBlackScore = parseInt(document.getElementById('card-score-black').value);
-let cardWhiteScore = parseInt($('#card-score-white').val(), 10);
-
-if (isNaN(cardBlackScore)==true) cardBlackScore=0;
-if (isNaN(cardWhiteScore)==true) cardWhiteScore=0;
-
-
-if(cardBlackScore > cardWhiteScore) {
-  cardBlack.classList.add('leader');
-}
-else{
-  cardBlack.classList.remove('leader');
-}
-if(cardWhiteScore > cardBlackScore){
-  cardWhite.classList.add('leader');
-}
-else{
-  cardWhite.classList.remove('leader');
-}
-
-
-
-console.log(cardBlackScore)
 
 
 
